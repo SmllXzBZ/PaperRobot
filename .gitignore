@@ -1,15 +1,9 @@
-pdf
-tmp
 venv
 .idea/*
 .DS_Store
 *.zip
-bibtex
 log
 __pycache__
 .idea
-pdf_bak
-info
 .pytest_cache
 .log
-config.py
