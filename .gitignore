@@ -7,3 +7,5 @@ __pycache__
 .idea
 .pytest_cache
 .log
+config.py
+data/
