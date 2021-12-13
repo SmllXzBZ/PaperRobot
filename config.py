@@ -17,7 +17,7 @@ HEADERS = {"Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,imag
            "Connection": "close", "Accept-Language": "zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2",
            "Accept-Encoding": "gzip, deflate"}
 
-USERNAME = 'skw20'
+USERNAME = 'tsinghua1'
 PASSWORD = 'helloworld'
 
 PROXIES = {

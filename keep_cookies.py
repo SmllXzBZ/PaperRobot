@@ -2,7 +2,7 @@ import urllib3
 import json
 import random, time
 from src.util import check_login, read_file, get_cookies_with_institution_login, save_file
-from config import COOKIE_FILE,KEEP_FILE
+from config import COOKIE_PATH,KEEP_PATH
 from src.log import init_log
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
@@ -20,7 +20,7 @@ def sleep():
 
 print("[+] Start Keeping Cookies....")
 # init
-data = read_file(COOKIE_FILE)
+data = read_file(COOKIE_PATH)
 if len(data):
     cookies = json.loads(data)
 else:
@@ -60,5 +60,5 @@ while True:
         print('[+] Springer COOKIE Updating succ....')
     if update:
         data = json.dumps(cookies).encode()
-        save_file(COOKIE_FILE, data)
+        save_file(COOKIE_PATH, data)
     sleep()

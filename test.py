@@ -5,11 +5,6 @@ from src.util import *
 from src.app import *
 
 # 测试功能正常与否
-
-func_list = ["test_get_volume_papers", "test_get_key_year_bibtex", "test_get_one_pdf", "test_get_key_year_pdf", "retry",
-             "test_selenium", "get_pdf", "login_download", "test_springer","show_status","test_pdf","test_retry"]
-
-
 def test_get_volume_papers():
     key = 'uss'
     year = 2019
@@ -35,12 +30,6 @@ def test_get_key_year_pdf():
     year = 2019
     result = get_key_year_pdf(key, year)
     assert result == True
-
-
-def test_selenium():
-    results = {}
-    return results
-
 
 def get_cookies(login_url):
     from selenium import webdriver
@@ -106,9 +95,6 @@ def parse_args():
     parser = argparse.ArgumentParser(
         epilog='\tExample: \r\npython ' + sys.argv[0] + " -m s -id case_a1")
     parser._optionals.title = "OPTIONS"
-    # 缺省的时候，列出所有可以下载的会议
-    # mode 下载模式
-    # 下载的会议
     parser.add_argument(
         '-t', '--test', default='x', help="")
 
@@ -195,14 +181,9 @@ def test_pdf():
         l = width/height
         print(p,l)
 
-@retry_func()
-def test_retry():
-    d = {}
-    d['222']
 
 # just for debug
 if __name__ == '__main__':
     args = parse_args()
     func = args.test
-    if func in func_list:
-        locals()[func]()
+    locals()[func]()
