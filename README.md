@@ -26,8 +26,8 @@ sudo pip3 install -r requirements.txt
 
 ## Why build this tool?
 
-1. 一个方便的论文调研工具： [Secpaper](https://secpaper.cn/). 论文调研必备！
-2. 通过这个工具可以构建自己的论文数据库。具体参考：[如何建立独属于你自己的论文数据库](https://moxiaoxi.info/papers/2020/10/18/Papers/)
+1. 通过这个工具可以构建自己的论文数据库。具体参考：[如何建立独属于你自己的论文数据库](https://moxiaoxi.info/papers/2020/10/18/Papers/)
+2. 一个方便的论文调研工具： [Secpaper](https://secpaper.cn/). 论文调研必备！
 3. 提取论文的摘要，自动翻译推送整理一些会议的研究简报，可以快速地过一下每个会议论文的内容，感兴趣的再阅读对应的pdf。
 4. 对会议研究热点、作者变化等等进行归类与整理。 如[Computer Science Rankings](http://csrankings.org/).
 
